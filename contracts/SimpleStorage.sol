@@ -22,7 +22,8 @@ contract SimpleStorage {
 
 
     // Function visability options "public" (default), "internal", "external" (functions only), "private"
-    function store(uint256 _favoriteNumber) public {
+    //"virtual" indicates that a function can be overrided and used in a child contract
+    function store(uint256 _favoriteNumber) public virtual {
         myfavoriteNumber = _favoriteNumber;
     }
 
